@@ -1,13 +1,17 @@
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 20px 50px;
+    margin: 0 auto;
+    max-width: 1240px;
+    padding-top: 20px;
+    padding-bottom: 40px;
     nav {
         ul {
             display: flex;
             list-style : none;
-            font-weight: 500;
-            gap: 50px;
+            font-size: 1.5rem;
+            font-weight: 600;
+            gap: 60px;
             a{
                 text-decoration: none;
                 color: black;
