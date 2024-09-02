@@ -3,6 +3,7 @@
 
 import React from 'react'
 import Header from './Header';
+import Footer from './Footer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from '../pages/Home/Home';
 import About from '../pages/About/About';
@@ -20,6 +21,7 @@ function App() {
         <Route path="/rooms" element = {<Rooms />} />
         <Route path="*" element = {<NotFound  />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }

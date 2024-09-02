@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-function Thumb({Logements}) {
+function RoomsCards({Logements}) {
   return (
       Logements.map((logement) => (
-        <div className="thumb" key={logement.id}>
+        <div className="rooms-cards" key={logement.id}>
           <img src={logement.cover} alt={logement.title} />
           <h2>{logement.title}</h2>
         </div>
@@ -12,8 +12,8 @@ function Thumb({Logements}) {
   );
 }
 
-Thumb.propTypes = {
+RoomsCards.propTypes = {
   Logements: PropTypes.array.isRequired
 }
 
-export default Thumb
+export default RoomsCards

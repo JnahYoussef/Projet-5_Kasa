@@ -1,5 +1,5 @@
 import React from 'react'
-import Thumb from '../../components/thumb'
+import RoomsCards from '../../components/RoomsCards'
 import Logements from '../../data/Logements.json'
 
 function Home() {
@@ -10,7 +10,7 @@ function Home() {
         <h1> Chez vous, partout et ailleurs</h1>
       </div>
       <div className='gallery'>
-        <Thumb Logements={Logements} />
+        <RoomsCards Logements={Logements} />
       </div>
     </div>
   )
