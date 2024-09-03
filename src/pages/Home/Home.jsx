@@ -6,7 +6,7 @@ function Home() {
   return (
     <div className='home'> 
       <div className='banner'>
-        <img src="./Banner.jpg" alt="Banner" />
+        <img src="./Home-Banner.jpg" alt="Banner" />
         <h1> Chez vous, partout et ailleurs</h1>
       </div>
       <div className='gallery'>

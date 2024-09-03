@@ -1,0 +1,51 @@
+
+.collapse{
+    background-color: #F6F6F6;
+    border-radius: 0.5rem;
+
+    &__title{
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-inline: 1rem;
+        align-items: center;
+        border-radius: 0.5rem;
+        font-size: 1.3rem;
+        font-weight: 600;
+        background-color: #FF6060;
+        color: #fff;
+
+        //animation des chevrons
+        &--up{
+             transform: rotate(0deg);
+             transition: transform 0.5s ease-in-out;
+        }
+
+        &--down{
+             transform: rotate(180deg);
+        }
+    }
+
+    &__content{
+        border-radius: 0.5rem;
+        padding: 0;
+        background-color: #F6F6F6;
+        //animation de l'ouverture de la collapse   
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        transition: max-height .3s ease-in-out, 
+                    padding .3s ease-in-out,
+                    opacity .2s ease-in-out;
+        //animation de la fermeture de la collapse      
+        &--open{
+            opacity: 1;
+            max-height: 500px; 
+            padding: 0.5rem 1rem;
+            transition: max-height  0.3s ease-in-out,
+                        padding .3s ease-in-out, 
+                        opacity .3s ease-in-out 0.1s;
+        } 
+    }
+}

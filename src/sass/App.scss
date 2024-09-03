@@ -2,6 +2,8 @@
 @use './home';
 @use './rooms-cards';
 @use './footer';
+@use './About.scss';
+@use './collapse.scss';
 
 body {
     font-family: "Montserrat", sans-serif;
