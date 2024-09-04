@@ -5,6 +5,7 @@ import PropTypes from 'prop-types'
 //import des icons de la librairie fontAwsome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
+
 // Définition du composant de collapsible (collapse)
 function Collapse({ title, content }) {
     // State pour gérer l'état ouvert/fermé du collapsible

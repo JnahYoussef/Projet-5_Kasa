@@ -1,0 +1,32 @@
+.notFound{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // height: 85vh;
+    width: 100%;
+    padding-bottom: 5rem;
+    h1{
+        font-size: 17rem;
+        color: #FF6060;
+        margin: 0;
+    }
+    h2{
+        font-size: 2rem;
+        color: #FF6060;
+        padding-bottom: 3rem;
+    }
+    a{
+        text-decoration: none;
+        color: #FF6060;
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+        border: 2px solid #FF6060;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        &:hover{
+            background-color: #FF6060;
+            color: white;
+        }
+    }
+}
