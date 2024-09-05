@@ -1,0 +1,62 @@
+.rooms {
+    margin: 0 auto;
+    max-width: 1240px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .pictures {
+
+    }
+    .composents{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-top: 10px;
+        .composents-up {
+            display: flex;
+            justify-content: space-between;
+            .composents-up-left {
+                display: flex;
+                flex-direction: column;
+                h1 {
+                    font-size: 2.5rem;
+                    font-weight: 600;
+                    color: #FF6060;
+                    margin: 0;
+                }
+                h2 {
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    margin-top: 5px;
+                }
+                .tags{
+                    display: flex;
+                    /* list-style-type: none; */
+                    /* flex-direction: row; */
+                    /* width: 116px; */
+                    justify-content: flex-start;
+                    ul{
+                        /* display: flex; */
+                        /* list-style: none; */
+                        padding: 0;
+                        /* gap: 10px; */
+                        margin-top: 5px;
+                        li {
+                            display: flex;
+                            font-size: .9rem;
+                            font-weight: 500;
+                            color: white;
+                            background-color: #FF6060;
+                            margin-right: 20px;
+                            border-radius: 15px;
+                            padding: 5px 30px;
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+}
