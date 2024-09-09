@@ -2,6 +2,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom';
 import logements from '../../data/logements.json';
 import Collapse from '../../components/Collapse';
+import Rating from '../../components/Rating';
 
 function findLogement(id) {
   return logements.find(logement => logement.id === id);
@@ -34,17 +35,23 @@ function Rooms() {
           </div>
           <div className='composents-up-right'>
             <div className='host'>
-              <p>{logement.host.name}</p>
+              <h3>{logement.host.name}</h3>
               <img src={logement.host.picture} alt={logement.host.name}/>
             </div>
             <div className='rating'>
-              <p>{logement.rating}</p>
+              <Rating rating={logement.rating} />
             </div>
           </div>
         </div>
         <div className='composents-down'>
-          <Collapse title='Description' content={logement.description} />
-          <Collapse title='Equipements' content={logement.equipments} />
+          <div><Collapse title='Description' content={logement.description} /></div>
+          <div className='equipements'>
+            <Collapse title='Equipements' content={logement.equipments.map((equipement, index) => (
+                <ul key={index}>
+                  <li>{equipement}</li>
+                </ul>
+            ))} />
+          </div>
         </div>
     </div>
   </div>
