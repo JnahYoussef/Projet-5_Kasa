@@ -7,7 +7,9 @@
 @use './notFound.scss';
 @use './rooms.scss';
 @use './rating.scss';
+@use './carrosel.scss';
 
 body {
     font-family: "Montserrat", sans-serif;
+    margin: 0;
 }

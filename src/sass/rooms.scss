@@ -4,8 +4,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    .pictures {
-
+    width: 95%;
+    .slider {
+        width: 100%;
     }
     .composents{
         display: flex;
@@ -15,6 +16,10 @@
         .composents-up {
             display: flex;
             justify-content: space-between;
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+                padding-bottom: 1rem;
+            }
             .composents-up-left {
                 display: flex;
                 flex-direction: column;
@@ -59,9 +64,13 @@
                 display: flex;
                 flex-direction: column;
                 align-items: flex-end;
+                @media screen and (max-width: 768px) {
+                    flex-direction: row-reverse;
+                    align-items: center;
+                    justify-content: space-between;
+                }
                 .host{
                     display: flex;
-                    /* flex-direction: row; */
                     justify-content: space-around;;
                     align-items: center;
                     h3 {
@@ -79,6 +88,10 @@
                 .rating {
                     margin-right: .5rem;
                     margin-top: 1rem;
+                    @media screen and (max-width: 768px) {
+                        margin-top: 0;
+                        
+                    }
                     
                 }
             }
@@ -88,6 +101,11 @@
             display: grid;
             grid-template-columns: repeat(2, 47%);
             justify-content: space-between;
+            @media screen and (max-width: 768px) {
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+            }
             .equipements {
                 ul {
                     list-style: none;

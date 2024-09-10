@@ -19,12 +19,12 @@
 
         //animation des chevrons
         &--up{
-             transform: rotate(180deg);
+             transform: rotate(0deg);
              transition: transform 0.3s ease-in-out;
         }
 
         &--down{
-             transform: rotate(0deg);
+             transform: rotate(180deg);
         }
     }
 

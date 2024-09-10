@@ -7,6 +7,14 @@
     align-items: center;
     background: #000;
     margin-top: 30px;
+    @media screen and (max-width: 600px) {
+        height: 250px;
+    }
+    img{
+        @media screen and (max-width: 600px) {
+            width: 15rem;
+        }
+    }
     h3{
         color: #fff;
         text-align: center;
@@ -14,5 +22,6 @@
         font-size: 24px;
         font-style: normal;
         font-weight: 500;
+        padding-inline: 7rem;
     }
 }
