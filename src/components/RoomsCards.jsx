@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 function RoomsCards({logements}) {
   return (
     logements.map((logement) => (
-      <Link to={`/rooms/${logement.id}`}>
-        <div className="rooms-cards" key={logement.index}>
+      <Link to={`/rooms/${logement.id}`} key={logement.id}>
+        <div className="rooms-cards">
           <img src={logement.cover} alt={logement.title} />
           <h2>{logement.title}</h2>
         </div>

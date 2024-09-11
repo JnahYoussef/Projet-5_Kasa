@@ -5,9 +5,7 @@ import Collapse from '../../components/Collapse';
 import Rating from '../../components/Rating';
 import Carrosel from '../../components/Carrosel';
 
-function findLogement(id) {
-  return logements.find(logement => logement.id === id);
-}
+const findLogement = (id) => logements.find((logement) => logement.id === id);
 
 function Rooms() {
   // Récupérer l'ID de la chambre depuis les paramètres de l'URL
@@ -22,7 +20,7 @@ function Rooms() {
     if (!logement) {
       navigate("/error");
     }
-  }, [id, logement, navigate]);
+  });
     // Vérifiez si location est défini avant d'accéder à ses propriétés
     if (!logement) {
       return null; // Ou affichez un composant d'erreur approprié
@@ -53,7 +51,7 @@ function Rooms() {
               <img src={logement.host.picture} alt={logement.host.name}/>
             </div>
             <div className='rating'>
-              <Rating rating={logement.rating} />
+            <Rating rating={Number(logement.rating)} />
             </div>
           </div>
         </div>

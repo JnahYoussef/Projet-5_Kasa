@@ -36,7 +36,8 @@ function Collapse({ title, content }) {
 Collapse.propTypes = {
     content: PropTypes.oneOfType([
         PropTypes.string,
-        PropTypes.object
+        PropTypes.object,
+        PropTypes.array
       ]),
     title: PropTypes.string
 }
