@@ -16,12 +16,16 @@
         justify-content: space-between;
         transform: translateY(-50%);
         button {
-            font-size: 7rem;
+            font-size: 4rem;
             color: white;
             border: none;
             background: none;
             cursor: pointer;
             padding-inline: 2rem;
+            &:hover {
+                transition: transform 0.5s;
+                transform: scale(2);
+            }
             @media screen and (max-width: 768px) {
                 font-size: 4rem;
                 
