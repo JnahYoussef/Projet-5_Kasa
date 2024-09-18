@@ -20,6 +20,7 @@ function Rooms() {
     if (!logement) {
       navigate("/error");
     }
+    window.scrollTo(0, 0);
   });
     // Vérifiez si location est défini avant d'accéder à ses propriétés
     if (!logement) {
@@ -51,7 +52,7 @@ function Rooms() {
               <img src={logement.host.picture} alt={logement.host.name}/>
             </div>
             <div className='rating'>
-            <Rating rating={Number(logement.rating)} />
+              <Rating rating={Number(logement.rating)} />
             </div>
           </div>
         </div>

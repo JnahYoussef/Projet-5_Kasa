@@ -1,6 +1,3 @@
-
-// import viteLogo from '/vite.svg'
-
 import React from 'react'
 import Header from './Header';
 import Footer from './Footer';
