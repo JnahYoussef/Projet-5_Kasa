@@ -1,7 +1,7 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState } from 'react' // Importation du hook useState pour gérer l'état du composant
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome' // Importation de FontAwesomeIcon pour afficher des icônes
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
@@ -28,19 +28,20 @@ function Carrosel({ pictures }) {
 
     return (
         <div className='carrosel'>
-            <img className="slides" src={pictures[index]} alt='carrosel' />
-            {totalPictures > 1 && (
+            <img className="slides" src={pictures[index]} alt='carrosel' />  {/* Affichage de l'image en fonction de l'index actuel du tableau 'pictures' */}
+            {totalPictures > 1 && ( // Affichage des boutons de navigation seulement si le total d'images est supérieur à 1
             <div className='carrosel_buttons'>
-                <button onClick={prev}>
-                    <FontAwesomeIcon icon={faChevronLeft} />
+                {/* Bouton pour naviguer vers l'image précédente, déclenche la fonction 'prev' */}
+                <button onClick={prev}>  
+                    <FontAwesomeIcon icon={faChevronLeft} /> {/* Icone de flèche vers la gauche */}
                 </button>
+                {/* Bouton pour naviguer vers l'image suivante, déclenche la fonction 'next' */}
                 <button onClick={next}>
-                    <FontAwesomeIcon icon={faChevronRight} />
+                    <FontAwesomeIcon icon={faChevronRight} /> {/* Icone de flèche vers la droite */}
                 </button>
             </div>
             )}
-            {/* Affichage du compteur seulement s'il y a plus d'une seule image */}
-            {totalPictures > 1 && (
+            {totalPictures > 1 && ( // Affichage du compteur (index actuel / total des images) seulement si le total d'images est supérieur à 1
                 <div className='carrosel_counter'>
                     {index + 1} / {totalPictures}
                 </div>

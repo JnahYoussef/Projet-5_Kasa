@@ -1,5 +1,5 @@
 import React from 'react'
-import Collapse from '../../components/Collapse';
+import Collapse from '../../components/Collapse'; // Importation du composant Collapse pour afficher le texte des sections Collapse
 
 function About() {
   return (
@@ -7,7 +7,7 @@ function About() {
       <div className='banner'>
         <img src="/About-Banner.png" alt="Banner" />
       </div>
-      <div className="aboutPage__content">
+      <div className="aboutPage__content"> {/* Conteneur pour le contenu de la page 'About', avec plusieurs sections Collapse qui se replie et affiche un texte */}
         <Collapse title="Fiabilité" content={
           <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes</p>
         }/>

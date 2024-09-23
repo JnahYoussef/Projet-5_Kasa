@@ -1,7 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
+import PropTypes from 'prop-types'; // Importation de PropTypes pour définir les types des props
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Importation de FontAwesomeIcon pour afficher les icônes
+import { faStar } from '@fortawesome/free-solid-svg-icons'; // Importation de l'icône d'étoile
 
 function Rating({ rating }) {
     // Icone pour une étoile vide
@@ -36,7 +36,7 @@ function Rating({ rating }) {
 
 
 Rating.propTypes = {
-    rating: PropTypes.number
+    rating: PropTypes.number 
 }
 
 export default Rating

@@ -1,6 +1,6 @@
-// Importation du module React et du hook useState
-import React, { useState } from 'react'
-import PropTypes from 'prop-types'
+
+import React, { useState } from 'react' // Importation du hook useState pour gérer l'état du composant
+import PropTypes from 'prop-types' // Importation de PropTypes pour définir les types des props
 
 //import des icons de la librairie fontAwsome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -34,12 +34,8 @@ function Collapse({ title, content }) {
 }
 
 Collapse.propTypes = {
-    content: PropTypes.oneOfType([
-        PropTypes.string,
-        PropTypes.object,
-        PropTypes.array
-      ]),
-    title: PropTypes.string
+    content: PropTypes.node, // Accepte du texte, JSX, ou tout ce qui peut être rendu
+    title: PropTypes.string.isRequired // Le titre est requis et doit être une chaîne de caractères
 }
 
 export default Collapse

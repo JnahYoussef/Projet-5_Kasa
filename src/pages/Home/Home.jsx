@@ -1,6 +1,6 @@
 import React from 'react'
-import RoomsCards from '../../components/RoomsCards'
-import logements from '../../data/logements.json'
+import RoomsCards from '../../components/RoomsCards' // Importation du composant RoomsCards
+import logements from '../../data/logements.json' // Importation des données des logements
 
 function Home() {
   return (
@@ -9,8 +9,8 @@ function Home() {
         <img src="./Home-Banner.jpg" alt="Banner" />
         <h1> Chez vous, partout et ailleurs</h1>
       </div>
-      <div className='gallery'>
-        <RoomsCards logements={logements} />
+      <div className='gallery'> {/* Section pour afficher les différents logements disponibles */}
+        <RoomsCards logements={logements} /> {/* On passe les données des logements en props au composant RoomsCards */}
       </div>
     </div>
   )
