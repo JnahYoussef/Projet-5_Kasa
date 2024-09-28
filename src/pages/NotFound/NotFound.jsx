@@ -5,7 +5,9 @@ function NotFound() {
   return (
     <div className='notFound'>
       <h1>404</h1> {/* Code d'erreur */}
-      <h2>Oups! La page que vous demandez n'existe pas.</h2> {/* Message d'erreur */}
+      <h2>
+        <span>Oups! La page que </span>vous demandez n'existe pas.
+      </h2> {/* Message d'erreur */}
       <Link to='/'>Retourner sur la page d'accueil</Link> {/* Lien pour retourner à la page d'accueil */}
     </div>
   )

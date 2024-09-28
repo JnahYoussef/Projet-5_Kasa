@@ -2,9 +2,8 @@
 import React, { useState } from 'react' // Importation du hook useState pour gérer l'état du composant
 import PropTypes from 'prop-types' // Importation de PropTypes pour définir les types des props
 
-//import des icons de la librairie fontAwsome
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+//import des icons flèche bas
+import ArrowDown from'/Icons/arrowDown.svg';
 
 // Définition du composant de collapsible (collapse)
 function Collapse({ title, content }) {
@@ -23,7 +22,7 @@ function Collapse({ title, content }) {
             <div className="collapse__title">
                 <p>{title}</p>
                 {/* La classe 'collapse__title--down' est ajoutée si le collapsible est ouvert */}
-                <FontAwesomeIcon icon={faChevronDown} className={`collapse__title--up ${isOpen ? 'collapse__title--down' : ''}`} />
+                <img src={ArrowDown} alt="Flèche bas" className={`collapse__title--up ${isOpen ? 'collapse__title--down' : ''}`} />
             </div>
             {/* Section du contenu avec une classe 'collapse__content--open' si le collapsible est ouvert */}
             <div className={`collapse__content ${isOpen ? 'collapse__content--open' : ''}`}>

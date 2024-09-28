@@ -12,7 +12,7 @@
     }
     img{
         @media screen and (max-width: 600px) {
-            width: 15rem;
+            width: 8rem;
         }
     }
     h3{
@@ -23,5 +23,9 @@
         font-style: normal;
         font-weight: 500;
         padding-inline: 7rem;
+        @media screen and (max-width: 600px) {
+            font-size: 12px;
+            padding-inline: 8rem;
+        }
     }
 }

@@ -2,7 +2,7 @@
 @use './home';
 @use './rooms-cards';
 @use './footer';
-@use './About.scss';
+@use './about.scss';
 @use './collapse.scss';
 @use './notFound.scss';
 @use './rooms.scss';
@@ -11,5 +11,4 @@
 
 body {
     font-family: "Montserrat", sans-serif;
-    margin: 0;
 }

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react' // Importation de useEffect pour effectuer des effets de bord
+import React, { useEffect } from 'react' // Importation de useEffect pour effectuer des effets
 import { useNavigate, useParams } from 'react-router-dom'; // Importation de useNavigate et useParams pour la navigation et la récupération des paramètres de l'URL
 import logements from '../../data/logements.json'; 
 import Collapse from '../../components/Collapse';

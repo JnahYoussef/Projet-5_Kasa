@@ -53,13 +53,17 @@
                         li {
                             display: flex;
                             font-size: .9rem;
-                            font-weight: 500;
+                            font-weight: 600;
                             color: white;
                             background-color: #FF6060;
-                            margin-right: 20px;
+                            margin-right: 14px;
                             border-radius: 15px;
                             padding: 5px 30px;
                             justify-content: center;
+                            @media screen and (max-width: 768px) {
+                                font-size: 10px;
+                                border-radius: 10px;
+                            }
                         }
                     }
                 }
