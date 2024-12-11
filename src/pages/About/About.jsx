@@ -3,7 +3,7 @@ import Collapse from '../../components/Collapse'; // Importation du composant Co
 
 function About() {
   return (
-    <div className='About'>
+    <div className='about'>
       <div className='banner'>
         <img src="/About-Banner.png" alt="Banner" />
       </div>
